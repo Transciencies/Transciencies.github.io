@@ -6,8 +6,8 @@ var stats_ctx = stats_canvas.getContext("2d");
 
 var NONCONFORM = 1.00;
 var BIAS = 0.5; //0.33;
-var TILE_SIZE = 60;
-var PEEP_SIZE = 60;
+var TILE_SIZE = 30;
+var PEEP_SIZE = 30;
 var GRID_SIZE = 10;
 var DIAGONAL_SQUARED = (TILE_SIZE+5)*(TILE_SIZE+5) + (TILE_SIZE+5)*(TILE_SIZE+5);
 
@@ -349,9 +349,9 @@ window.writeStats = function(){
 
 	// Graph it
 	stats_ctx.fillStyle = "#cc2727";
-	var x = 4*STATS.steps - STATS.offset;
+	var x = 8*STATS.steps - STATS.offset;
 	var y = 250 - segregation*250+10;
-	stats_ctx.fillRect(x,y,3,5);
+	stats_ctx.fillRect(x,y,7,5);
 
 	// Text
 	stats_text.innerHTML = Math.floor(segregation*100)+"%";

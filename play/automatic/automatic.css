@@ -2,6 +2,7 @@ body{
 	margin:0;
 	overflow: hidden;
 	background: #222;
+	/* background: #FFFFFF; */
 
 	font-family: sans-serif;
 	font-size: 1.5em;
@@ -37,7 +38,7 @@ div{
 }
 #stats_text{
 	position: absolute;
-	color:#cc2727;
+	color:#FFFFFF;
 	font-size: 20px;
 }
 #stats_canvas_container{
@@ -45,6 +46,7 @@ div{
 	width:400px; height:300px;
 	position:relative; overflow:hidden;
 	margin-bottom: 20px;
+	
 }
 #stats_canvas{
 	position: absolute;
